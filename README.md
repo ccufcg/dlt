@@ -15,15 +15,20 @@ Os arquivos estão distribuidos dentro das unidades do curso, como no exemplo ab
 ```
 📄 README.md
 📂 unidade_01_fundamentos/
-   ├── 📄 hashing_bloom_filter.ipynb
-   ├── 📄 kdf.ipynb
-   ├── 📄 aes_imagens.ipynb
+   ├── 🐍 hashing_bloom_filter.ipynb
+   ├── 🐍 kdf.ipynb
+   ├── 🐍 aes_imagens.ipynb
+   ├── 🐍 assinaturas_digitais_rsa_ecdsa.ipynb
+   ├── 📖 exemplo.pdf
+   ├── 🐍 homomorfia_paillier.ipynb
 ```
 
 ### Tabela de artefatos
 
 | Unidade | Arquivo/pasta | Descrição |
 | :-:     |  :-           | :-        |
-|Unidade 01|hashing_bloom_filter.ipynb | Exemplo de aplicação de hashing e Bloom Filter||
-|Unidade 01|kdf.ipynb|Exemplo de Key Derivation Functions - KDF|
-|Unidade 01|aes_imagens.ipynb|Exemplo da utilização do AES com imagens|
+|Unidade 01| hashing_bloom_filter.ipynb | Exemplo de aplicação de hashing e `Bloom Filter` |
+|Unidade 01| kdf.ipynb | Exemplo de Key Derivation Functions - `KDF` |
+|Unidade 01| aes_imagens.ipynb | Exemplo da utilização do `AES` com imagens |
+|Unidade 01| assinaturas_digitais_rsa_ecdsa.ipynb | Exemplo de uso do `rsa` e `ecdsa` |
+|Unidade 01| homomorfia_paillier.ipynb | Introdução a criptografia homomorfica com Paillier |
