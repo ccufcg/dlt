@@ -22,6 +22,8 @@ Os arquivos estão distribuidos dentro das unidades do curso, como no exemplo ab
    ├── 🐍 assinaturas_digitais_rsa_ecdsa.ipynb
    ├── 📖 exemplo.pdf
    ├── 🐍 homomorfia_paillier.ipynb
+📂 unidade_02/
+   ├── 📄 consenso.md
 ```
 
 ### Tabela de artefatos
