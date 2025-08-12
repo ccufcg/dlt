@@ -24,6 +24,11 @@ Os arquivos estão distribuidos dentro das unidades do curso, como no exemplo ab
    ├── 🐍 homomorfia_paillier.ipynb
 📂 unidade_02/
    ├── 📄 consenso.md
+📂 unidade_03/
+   ├── 📂 na10a/
+         ├── 📄 README.md
+         ├── cartorio_v4.sol
+         ├── fiscal_v1.sol
 ```
 
 ### Tabela de artefatos
@@ -36,3 +41,5 @@ Os arquivos estão distribuidos dentro das unidades do curso, como no exemplo ab
 |Unidade 01| rsa_ecc.ipynb | Criptografia Assimétrica com `rsa` e `ecdsa` |
 |Unidade 01| assinaturas_digitais_rsa_ecdsa.ipynb | Exemplo de assinaturas de messages e documentos com `rsa` e `ecdsa` |
 |Unidade 01| homomorfia_paillier.ipynb | Introdução a criptografia homomorfica com Paillier |
+|Unidade 02| conseso.md | Topicos sobre consenso |
+|Unidade 03| na10a/README.md | Introdução a dAPP/Solidity |
