@@ -29,6 +29,8 @@ Os arquivos estão distribuidos dentro das unidades do curso, como no exemplo ab
          ├── 📄 README.md
          ├── cartorio_v4.sol
          ├── fiscal_v1.sol
+   ├── 📂 na10b/
+   ├── 📂 na10c/
 ```
 
 ### Tabela de artefatos
@@ -43,3 +45,5 @@ Os arquivos estão distribuidos dentro das unidades do curso, como no exemplo ab
 |Unidade 01| homomorfia_paillier.ipynb | Introdução a criptografia homomorfica com Paillier |
 |Unidade 02| conseso.md | Topicos sobre consenso |
 |Unidade 03| na10a/README.md | Introdução a dAPP/Solidity |
+|Unidade 03| na10b/README.md | Exemplo dAPP/Solidity + js |
+|Unidade 03| na10c/README.md | Exemplo dAPP/Solidity + py |
