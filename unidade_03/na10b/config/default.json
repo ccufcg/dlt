@@ -1,0 +1,16 @@
+{
+  "network": {
+    "rpcUrl": "http://127.0.0.1:8545",
+    "chainId": 1337
+  },
+  "contracts": {
+    "Cartorio": {
+      "address": "0x9B8397f1B0FEcD3a1a40CdD5E8221Fa461898517",
+      "abiFile": "config/cartorio.idl"
+    },
+    "DesmatamentoFiscalizador": {
+      "address": "0x05d91B9031A655d08E654177336d08543ac4B711",
+      "abiFile": "config/fiscal.idl"
+    }
+  }
+}

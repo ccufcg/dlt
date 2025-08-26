@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <title>DApp - Cartório</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="js/utils.js"></script>
+</head>
+<body>
+  <h1>Cartório</h1>
+
+  <section>
+    <h2>Registrar Propriedade</h2>
+    <input id="propAddr" placeholder="Endereço proprietário"/>
+    <input id="propArea" placeholder="Área total"/>
+    <input id="propPermitida" placeholder="Área desmatada permitida"/>
+    <button onclick="registrar()">Registrar</button>
+  </section>
+
+  <section>
+    <h2>Consultar Propriedade</h2>
+    <input id="propId" placeholder="ID da propriedade"/>
+    <button onclick="consultar()">Consultar</button>
+    <pre id="propOut"></pre>
+  </section>
+
+  <script src="js/cartorio.js"></script>
+</body>
+</html>

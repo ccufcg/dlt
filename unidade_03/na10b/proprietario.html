@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <title>DApp - Proprietário</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="js/utils.js"></script>
+</head>
+<body>
+  <h1>Proprietário - Minhas Multas</h1>
+
+  <section>
+    <h2>Minhas Multas em Aberto</h2>
+    <button onclick="minhasMultas()">Listar</button>
+    <pre id="multasOut"></pre>
+  </section>
+
+  <section>
+    <h2>Pagar Multa</h2>
+    <input id="idMulta" placeholder="ID da Multa"/>
+    <button onclick="pagarMulta()">Pagar</button>
+  </section>
+
+  <script src="js/proprietario.js"></script>
+</body>
+</html>

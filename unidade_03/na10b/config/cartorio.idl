@@ -1,0 +1,243 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "proprietario",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "areaTotal",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "areaDesmatadaPermitida",
+				"type": "uint256"
+			}
+		],
+		"name": "PropriedadeRegistrada",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_proprietario",
+				"type": "address"
+			}
+		],
+		"name": "getPropriedade",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "proprietario",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "areaTotal",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "areaDesmatadaPermitida",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "registrada",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct Entidades.Propriedade",
+				"name": "prop",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getPropriedade",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "proprietario",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "areaTotal",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "areaDesmatadaPermitida",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "registrada",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct Entidades.Propriedade",
+				"name": "prop",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getTotalPropriedades",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "propriedades",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "proprietario",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "areaTotal",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "areaDesmatadaPermitida",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "registrada",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "propriedades_addr",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "proprietario",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "areaTotal",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "areaDesmatadaPermitida",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "registrada",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_proprietario",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_areaTotal",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_areaDesmatadaPermitida",
+				"type": "uint256"
+			}
+		],
+		"name": "registrarPropriedade",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

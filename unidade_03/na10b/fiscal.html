@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <title>DApp - Fiscal</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="js/utils.js"></script>
+</head>
+<body>
+  <h1>Fiscal - Multas</h1>
+
+  <section>
+    <h2>Lançar Multa</h2>
+    <input id="idProp" placeholder="ID Propriedade"/>
+    <input id="areaDetectada" placeholder="Área desmatada detectada"/>
+    <button onclick="detectar()">Detectar</button>
+  </section>
+
+  <section>
+    <h2>Consultar Multas por Propriedade</h2>
+    <input id="idPropConsulta" placeholder="ID Propriedade"/>
+    <button onclick="consultarMultas()">Consultar</button>
+    <pre id="multasOut"></pre>
+  </section>
+
+  <section>
+    <h2>Saldo do Contrato</h2>
+    <button onclick="mostrarSaldo()">Consultar Saldo</button>
+  </section>
+
+  <script src="js/fiscal.js"></script>
+</body>
+</html>
