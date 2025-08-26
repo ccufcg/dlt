@@ -1,0 +1,172 @@
+openapi: 3.0.3
+info:
+  title: API Cartório e Fiscal
+  description: API para gerenciamento de propriedades, detecção de desmatamento e multas.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+paths:
+  /cartorio/registrar:
+    post:
+      summary: Registrar uma nova propriedade
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                proprietario:
+                  type: string
+                  description: Wallet do proprietário
+                area_total:
+                  type: integer
+                  description: Área total da propriedade
+                area_desmatada_permitida:
+                  type: integer
+                  description: Área permitida de desmatamento
+      responses:
+        200:
+          description: Transação de registro de propriedade
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transaction_hash:
+                    type: string
+                    description: Hash da transação 
+                  tx_url:
+                    type: string
+                    description: URL para detalhes da transação
+                  logs_url:
+                    type: string
+                    description: Logs da transação
+
+  /cartorio/propriedade/{id}:
+    get:
+      summary: Buscar detalhes de uma propriedade pelo ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Detalhes da propriedade
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  proprietario:
+                    type: string
+                  area_total:
+                    type: integer
+                  area_desmatada_permitida:
+                    type: integer
+                  registrada:
+                    type: boolean
+
+  /fiscal/detectar:
+    post:
+      summary: Detectar desmatamento em uma propriedade
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id_propriedade:
+                  type: integer
+                area_desmatada_detectada:
+                  type: integer
+      responses:
+        200:
+          description: Transação de detecção de desmatamento
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tx:
+                    type: object
+                    description: Detalhes da transação Ethereum
+
+  /fiscal/multas/{id_propriedade}:
+    get:
+      summary: Obter multas de uma propriedade
+      parameters:
+        - in: path
+          name: id_propriedade
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Lista de multas associadas à propriedade
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id_propriedade:
+                    type: integer
+                  multas:
+                    type: array
+                    items:
+                      type: string
+
+  /fiscal/multas_abertas/{proprietario}:
+    get:
+      summary: Obter multas abertas de um proprietário
+      parameters:
+        - in: path
+          name: proprietario
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Multas abertas do proprietário
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  proprietario:
+                    type: string
+                  multas_abertas:
+                    type: array
+                    items:
+                      type: string
+
+  /fiscal/pagar:
+    post:
+      summary: Pagar uma multa
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id_multa:
+                  type: integer
+                valor:
+                  type: integer
+      responses:
+        200:
+          description: Transação de pagamento de multa
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tx:
+                    type: object
+                    description: Detalhes da transação Ethereum

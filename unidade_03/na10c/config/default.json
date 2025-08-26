@@ -1,0 +1,8 @@
+{
+  "provider": "http://127.0.0.1:8545",
+  "chainId": 1337,
+  "admin_private_key": "8f2a55949038a9610f50fb23b5883af3b4ecb3c3bb792cbcefbd1542c692be63",
+  "cartorio_address": "0x0000000000000000000000000000000000000001",
+  "fiscal_address": "0x0000000000000000000000000000000000000001"
+}
+
