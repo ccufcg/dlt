@@ -16,6 +16,8 @@ Os arquivos estão distribuidos dentro das unidades do curso, como no exemplo ab
 📄 README.md
 📂 unidade_01_fundamentos/
    ├── 🐍 hashing_bloom_filter.ipynb
+   ├── 🐍 entropia_analise.ipynb
+   ├── 🐍 entropia_analise_bytes.ipynb
    ├── 🐍 hmac.ipynb
    ├── 🐍 salt.ipynb
    ├── 🐍 kdf.ipynb
@@ -40,6 +42,8 @@ Os arquivos estão distribuidos dentro das unidades do curso, como no exemplo ab
 | Unidade | Arquivo/pasta | Descrição |
 | :-:     |  :-           | :-        |
 |Unidade 01| hashing_bloom_filter.ipynb | Exemplo de aplicação de hashing e `Bloom Filter` |
+|Unidade 01| [entropia_analise.ipynb](unidade_01_fundamentos/entropia_analise.ipynb) | Entropia de Shannon das saídas criptográficas (MD5, SHA-2, HMAC, KDF)|
+|Unidade 01| [entropia_analise_bytes.ipynb](unidade_01_fundamentos/entropia_analise_bytes.ipynb) | Análise de edistribuição posicional, teste Qui-Quadrado por posição e heatmap de distribuição de bytes (inclui BIP-39) |
 |Unidade 01| hmac.ipynb | Exemplo de autenticação de mensagens com `HMAC` |
 |Unidade 01| salt.ipynb | Exemplo de uso de `salt` em funções de hash |
 |Unidade 01| kdf.ipynb | Exemplo de Key Derivation Functions - `KDF` |
