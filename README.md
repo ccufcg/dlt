@@ -16,6 +16,8 @@ Os arquivos estão distribuidos dentro das unidades do curso, como no exemplo ab
 📄 README.md
 📂 unidade_01_fundamentos/
    ├── 🐍 hashing_bloom_filter.ipynb
+   ├── 🐍 hmac.ipynb
+   ├── 🐍 salt.ipynb
    ├── 🐍 kdf.ipynb
    ├── 🐍 aes_imagens.ipynb
    ├── 🐍 rsa_ecc.ipynb
@@ -38,6 +40,8 @@ Os arquivos estão distribuidos dentro das unidades do curso, como no exemplo ab
 | Unidade | Arquivo/pasta | Descrição |
 | :-:     |  :-           | :-        |
 |Unidade 01| hashing_bloom_filter.ipynb | Exemplo de aplicação de hashing e `Bloom Filter` |
+|Unidade 01| hmac.ipynb | Exemplo de autenticação de mensagens com `HMAC` |
+|Unidade 01| salt.ipynb | Exemplo de uso de `salt` em funções de hash |
 |Unidade 01| kdf.ipynb | Exemplo de Key Derivation Functions - `KDF` |
 |Unidade 01| aes_imagens.ipynb | Exemplo da utilização do `AES` com imagens |
 |Unidade 01| rsa_ecc.ipynb | Criptografia Assimétrica com `rsa` e `ecdsa` |
